@@ -2,7 +2,7 @@
 本repo用于安泰杯 —— 跨境电商智能算法大赛交流学习
 
 ## 数据探索
-- [here](https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12586969.1002.3.7404238aEWDucd&postId=65062)
+- [here](https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12586969.1002.9.7404238aEWDucd&postId=64831)
 
 ## baseline
 
