@@ -6,7 +6,7 @@
 
 ## baseline
 
-- [基于规则 - baseline](https://zhuanlan.zhihu.com/p/74119672?utm_medium=social&utm_source=com.tencent.tim&utm_oi=555381879923224576)
+- [基于规则](https://zhuanlan.zhihu.com/p/74119672?utm_medium=social&utm_source=com.tencent.tim&utm_oi=555381879923224576)
 
 - [基于深度学习](https://zhuanlan.zhihu.com/p/32078473)
 
