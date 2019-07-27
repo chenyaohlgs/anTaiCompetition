@@ -106,7 +106,8 @@ def generate_user_features(data_df):
     print('add num_item....')
     admin_df['num_item'] = data_df[['buyer_admin_id','item_id','count']].drop_duplicates().groupby(['buyer_admin_id'])['count'].sum().to_list() # 商品件数
     print('add pop_unpop_rate...')
-    admin_df['pop_unpop_rate'] = data_df.groupby(['buyer_admin_id'])['if_popular'].sum()/data_df.groupby(['buyer_admin_id'])['count'].sum().to_list()
+    tmp = data_df.groupby(['buyer_admin_id'])['if_popular'].sum()/data_df.groupby(['buyer_admin_id'])['count'].sum()
+    admin_df['pop_unpop_rate'] = tmp.to_list()
     #商品价格
     print('add item price....')
     admin_df['item_price_sum'] = data_df.groupby(['buyer_admin_id'])['item_price'].sum().to_list()
