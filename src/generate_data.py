@@ -136,12 +136,12 @@ def generate_item_features(data_df,item_df):
 if __name__=='__main__':
     saved_pickle = True  #如果已经保存生成过pickle文件，则为True， 如果需要生成pickle文件，则设置为False
     
-    ITEMATTR_CSV_PATH = '../data/Antai_AE_round1_item_attr_20190626.csv'
-    TRAIN_CSV_PATH = '../data/Antai_AE_round1_train_20190626.csv'
-    TEST_CSV_PATH = '../data/Antai_AE_round1_test_20190626.csv'
-    ITEMATTR_PKL_PATH = '../item_attr.pkl'
-    TRAIN_PKL_PATH = '../train.pkl'
-    TEST_PKL_PATH = '../test.pkl'
+    ITEMATTR_CSV_PATH = '../csv/Antai_AE_round1_item_attr_20190626.csv'
+    TRAIN_CSV_PATH = '../csv/Antai_AE_round1_train_20190626.csv'
+    TEST_CSV_PATH = '../csv/Antai_AE_round1_test_20190626.csv'
+    ITEMATTR_PKL_PATH = '../data/item_attr.pkl'
+    TRAIN_PKL_PATH = '../data/train.pkl'
+    TEST_PKL_PATH = '../data/test.pkl'
     if not saved_pickle:
         print('read csv file and generate pickle files...')
         readcsv_save_pickle()
