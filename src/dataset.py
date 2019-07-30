@@ -41,4 +41,4 @@ class AntaiDataset(Dataset):
         label = data_series['label']
         admin_features = data_series.iloc[:14].values
         item_features = data_series.iloc[14:-1].values
-        return admin_features.astype(np.float32), item_features.astype(np.float32), np.array(label)
+        return admin_features.astype(np.float32), item_features.astype(np.float32), np.array(label, dtype=np.float32)
