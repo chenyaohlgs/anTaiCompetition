@@ -5,7 +5,7 @@ import config as cfgI
 class AntaiRSModel(nn.Module):
     def __init__(self):
         super(AntaiRSModel,self).__init__()
-        torch.manual_seed(1) # 随机初始化embedding举证
+        torch.manual_seed(1) # 随机初始化embedding矩阵
         self.admin_id_embeds = nn.Embedding(admin_id_max, embed_dim) # 64
         self.item_id_embeds = nn.Embedding(item_id_max, embed_dim)
         self.item_sellnum_embeds = nn.Embedding(item_sellnum_max, embed_dim)
